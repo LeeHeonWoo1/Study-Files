@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/style1.css">
+  <title>Document</title>
+</head>
+<body>
+  <form id="login-form" class="hidden">
+    <input type="text" placeholder="What is your name?" required maxlength="15"/> <!-- js에서 자체적으로 유효성 검사를 진행해도 되지만, 내장된 기능을 사용하는것도 좋은 방법이다. 또한 form태그가 내장된 element들을 submit시키고 있기 때문에 버튼을 누르거나 엔터키를 치면 새로고침된다.-->
+    <input type="submit" value="Log In"/>
+    <!-- <a href="https://nomadcoders.co">Go to courses</a> -->
+  </form>
+  <h1 id="greeting" class="hidden" ></h1>
+  <form id="todo-form" class="hidden">
+    <input type="text" placeholder="일정을 입력하고 엔터키를 눌러주세요!" required/>
+  </form>
+  <ul id="todo-list"></ul>
+  <div id="quote" >
+    <span></span>
+    <span></span>
+  </div>
+  <div id="weather-container">
+    <span id="weather"></span>
+    <span id="city"></span>
+    <span id="temp-min-max"></span>
+  </div>
+  <h2 id="clock" >00:00:00</h2>
+  <script src="../project/greeting.js"></script>
+  <script src="../project/clock.js"></script>
+  <script src="../project/quotes.js"></script>
+  <script src="../project/background.js"></script>
+  <script src="../project/todo.js"></script>
+  <script src="../project/weather.js"></script>
+</body>
+</html>
